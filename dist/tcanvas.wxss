@@ -1,0 +1,94 @@
+.container {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: #fff;
+
+}
+
+.row_button{
+  width: 100%;
+  background-color: #f9f9f9;
+}
+.images{
+  display: block;
+  overflow:inherit;
+}
+.row {
+  display: block;
+}
+
+.clearfix:after {
+  content: "\200B";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.btn_group {
+  box-sizing: border-box;
+  /*padding: 22rpx 5.6% 22rpx;*/
+  background-color: #fff;
+  font-size: 30rpx;
+  text-align:center;
+  color: #545655;
+}
+.top_middle_wrap{
+  background-color: #f9f9f9;
+  padding: 22rpx;
+  border-bottom: 1px solid #E2E2E2;
+}
+.img_btn {
+  width:48rpx;
+  height:48rpx;
+  text-align:center;
+}
+.img_btn_wrap{
+  display: inline-block;
+  margin: 40rpx 20rpx 60rpx;
+}
+.btn2 {
+  display: inline-block;
+  margin: 30rpx 10rpx;
+}
+
+.middle {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.reset {
+  border: 1px solid white;
+  border-radius: 30rpx;
+  width: 128rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #C7C7C9;
+  color: #f9f9f9;
+  font-size: 22rpx;
+}
+
+.close {
+  display: inline-block;
+  float: left;
+  margin: 35rpx;
+}
+
+.ok {
+  display: inline-block;
+  float: right;
+  margin: 35rpx;
+}
+
+.choose_img_btn{
+    height:65rpx;
+    width:232rpx;
+    line-height:65rpx;
+    border-radius: 30rpx;
+    border:2rpx solid #555555;
+    color: #555555;
+    margin-top: 24rpx;
+    font-size: 32rpx;
+    display: inline-block;
+}

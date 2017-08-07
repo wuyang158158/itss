@@ -1,0 +1,60 @@
+<view class="container">
+
+    <view class="row">
+        <canvas canvas-id="{{canvasId}}"
+                disable-scroll="true"
+                bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend"
+                bindcanvasidchange="canvasidchange" bindtap="tapCanvas" binderror="errorCanvas"
+                style="width:{{width}}px;height:{{height}}px;background-color:#ccc">
+        </canvas>
+    </view>
+
+    <view class="row row_button"  style="border-top:1px solid #f9f9f9;">
+        <view class="btn_group">
+            <view class="top_middle_wrap">
+              <view class="top clearfix">
+                <view class="reset"  bindtap="reset" alt="重置">重置</view>
+
+              </view>
+              <view class="middle clearfix">
+                <view class="img_btn_wrap" bindtap="rotate90">
+                  <view class="btn2 img_btn" alt="向左旋转九十度">
+                    <image class="images" src="{{tcanvasIcon.tcanvasRotate}}" mode="aspectFill" />
+                  </view>
+                </view>
+                <view class="img_btn_wrap" bindtap="zoomOut">
+                  <view class="btn2 img_btn" alt="放大">
+                    <image class="images" src="{{tcanvasIcon.tcanvasZoomIn}}" mode="aspectFill" />
+                  </view>
+                </view>
+                <view class="img_btn_wrap" bindtap="zoomIn">
+                  <view class="btn2 img_btn" alt="缩小">
+                    <image class="images" src="{{tcanvasIcon.tcanvasZoomOut}}" mode="aspectFill" />
+                  </view>
+                </view>
+                <view class="img_btn_wrap" bindtap="rotateLeft">
+                  <view class="btn2 img_btn" alt="左旋">
+                    <image class="images" src="{{tcanvasIcon.tcanvasLeftRotate}}" mode="aspectFill" />
+                  </view>
+                </view>
+                <view class="img_btn_wrap" bindtap="rotateRight">
+                  <view class="btn2 img_btn" alt="右旋">
+                    <image class="images" src="{{tcanvasIcon.tcanvasRightRotate}}" mode="aspectFill" />
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="bottom clearfix">
+                <view class="img_btn close" bindtap="close" alt="关闭">
+                  <image class="images" src="{{tcanvasIcon.tcanvasClose}}" mode="aspectFill" />
+                </view>
+                <view class="choose_img_btn" bindtap="chooseImage" alt="选择图片">选择图片</view>
+                <view class="img_btn ok" bindtap="ok" alt="保存">
+                  <image class="images" src="{{tcanvasIcon.tcanvasConfirm}}" mode="aspectFill" />
+                </view>
+            </view>
+        </view>
+    </view>
+
+
+</view>
